@@ -1,0 +1,114 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="theme-color" content="#FFE1C4">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <!-- materialize icons, css and js -->
+    <link rel="stylesheet" href="/css/materialize.min.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="/css/styles.css" type="text/css">
+    <script type="text/javascript" src="/js/materialize.min.js"></script>
+    <link rel="manifest" href="/manifest.json">
+</head>
+
+<body class="grey lighten-4">
+    <!-- top nav -->
+    <nav class="z-depth-0">
+        <div class="new-wrapper container">
+            <a href="/">To Do <span>List</span></a>
+            <span class="right grey-text text-darken-1">
+                <i class="material-icons sidenav-trigger" data-target="side-menu">menu</i>
+            </span>
+        </div>
+    </nav>
+
+    <!-- side nav -->
+    <ul id="side-menu" class="sidenav side-menu">
+        <li><a class="subheader">My ToDo</a></li>
+        <li><a href="/" class="waves-effect">Home</a></li>
+        <li><a href="/pages/about.html" class="waves-effect">About</a></li>
+        <li>
+            <div class="divider">Home</div>
+        </li>
+        <li><a href="/pages/contact.html" class="waves-effect"><i class="material-icons">mail_outline</i>Contact</a>
+        </li>
+    </ul>
+
+    <!-- tasks  -->
+    <div class="tsks container grey-text text-darken-1">
+        <div class="card-panel task white row">
+            <img src="/img/download.png" alt="">
+            <div class="task-details">
+                <div class="task-title">Morning</div>
+                <div class="task-description">Study PWA</div>
+            </div>
+            <div class="task-delete">
+                <i class="material-icons">delete_outline</i>
+            </div>
+        </div>
+        <div class="card-panel task white row">
+            <img src="/img/download.png" alt="">
+            <div class="task-details">
+                <div class="task-title">Morning</div>
+                <div class="task-description">Study PWA</div>
+            </div>
+            <div class="task-delete">
+                <i class="material-icons">delete_outline</i>
+            </div>
+        </div>
+        <div class="card-panel task white row">
+            <img src="/img/download.png" alt="">
+            <div class="task-details">
+                <div class="task-title">Morning</div>
+                <div class="task-description">Study PWA</div>
+            </div>
+            <div class="task-delete">
+                <i class="material-icons">delete_outline</i>
+            </div>
+        </div>
+        <div class="card-panel task white row">
+            <img src="/img/download.png" alt="">
+            <div class="task-details">
+                <div class="task-title">Morning</div>
+                <div class="task-description">Study PWA</div>
+            </div>
+            <div class="task-delete">
+                <i class="material-icons">delete_outline</i>
+            </div>
+        </div>
+    </div>
+
+    <!-- add button -->
+    <div class="center">
+        <a class="btn-floating btn-small add-btn sidenav-trigger" data-target="side-form">
+            <i class="material-icons">add</i>
+        </a>
+    </div>
+
+    <!-- add task -->
+    <div id="side-form" class="sidenav side-form">
+        <form class="add-task container section">
+            <h6>New Task</h6>
+            <div class="divider"></div>
+            <div class="input-field">
+                <input type="text" placeholder="e.g. morning 8:00 am" class="validate" id="title">
+                <label for="title"> Task title</label>
+            </div>
+            <div class="input-field">
+                <input type="text" placeholder="e.g. study PWA" class="validate" id="desciption">
+                <label for="desciption"> Task description</label>
+            </div>
+            <div class="input-field center">
+                <button class="btn-small"> Add</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="/js/app.js"></script>
+    <script src="/js/ui.js"></script>
+</body>
+
+</html>
